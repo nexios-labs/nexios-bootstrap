@@ -1,0 +1,32 @@
+# Core framework
+nexios>=3.0.0
+
+# Database
+tortoise-orm>=0.20.0
+asyncpg>=0.28.0  # PostgreSQL driver
+aiosqlite>=0.19.0  # SQLite driver
+
+# ASGI server
+uvicorn[standard]>=0.24.0
+
+# Authentication
+python-jose[cryptography]>=3.3.0
+passlib[bcrypt]>=1.7.4
+
+# Validation
+pydantic>=2.0.0
+
+# Migrations
+aerich>=0.7.2
+
+# Development tools
+pytest>=7.4.0
+pytest-asyncio>=0.21.0
+black>=23.0.0
+ruff>=0.1.0
+
+# Logging and monitoring
+structlog>=23.0.0
+
+# CORS handling (if needed separately)
+python-multipart>=0.0.6

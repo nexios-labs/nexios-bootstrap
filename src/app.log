@@ -1,0 +1,213 @@
+2026-02-19 23:32:46,294 - core.database - INFO - Initializing database connection...
+2026-02-19 23:32:46,295 - core.database - INFO - DATABASE_URL not provided or not PostgreSQL, using SQLite
+2026-02-19 23:32:46,295 - core.database - INFO - Using SQLite database
+2026-02-19 23:32:46,565 - core.database - INFO - Database initialized successfully
+2026-02-19 23:32:59,431 - core.middleware.logging - INFO - Request: GET http://127.0.0.1:8000/ - Headers: {'host': '127.0.0.1:8000', 'connection': 'keep-alive', 'sec-ch-ua': '"Not:A-Brand";v="99", "Microsoft Edge";v="145", "Chromium";v="145"', 'sec-ch-ua-mobile': '?0', 'sec-ch-ua-platform': '"Windows"', 'upgrade-insecure-requests': '1', 'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36 Edg/145.0.0.0', 'accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7', 'sec-fetch-site': 'none', 'sec-fetch-mode': 'navigate', 'sec-fetch-user': '?1', 'sec-fetch-dest': 'document', 'accept-encoding': 'gzip, deflate, br, zstd', 'accept-language': 'en-US,en;q=0.9', 'cookie': 'csrftoken=vrRey3LlaOIc4fAlMr9bwV63XwuJrzfv'}
+2026-02-19 23:32:59,474 - core.middleware.logging - INFO - Response: GET http://127.0.0.1:8000/ - Status: 404
+2026-02-19 23:33:03,345 - core.middleware.logging - INFO - Request: GET http://127.0.0.1:8000/docs - Headers: {'host': '127.0.0.1:8000', 'connection': 'keep-alive', 'sec-ch-ua': '"Not:A-Brand";v="99", "Microsoft Edge";v="145", "Chromium";v="145"', 'sec-ch-ua-mobile': '?0', 'sec-ch-ua-platform': '"Windows"', 'upgrade-insecure-requests': '1', 'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36 Edg/145.0.0.0', 'accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7', 'sec-fetch-site': 'none', 'sec-fetch-mode': 'navigate', 'sec-fetch-user': '?1', 'sec-fetch-dest': 'document', 'accept-encoding': 'gzip, deflate, br, zstd', 'accept-language': 'en-US,en;q=0.9', 'cookie': 'csrftoken=vrRey3LlaOIc4fAlMr9bwV63XwuJrzfv'}
+2026-02-19 23:33:03,350 - core.middleware.logging - INFO - Response: GET http://127.0.0.1:8000/docs - Status: 200
+2026-02-19 23:33:07,998 - core.middleware.logging - INFO - Request: GET http://127.0.0.1:8000/openapi.json - Headers: {'host': '127.0.0.1:8000', 'connection': 'keep-alive', 'sec-ch-ua-platform': '"Windows"', 'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36 Edg/145.0.0.0', 'accept': 'application/json,*/*', 'sec-ch-ua': '"Not:A-Brand";v="99", "Microsoft Edge";v="145", "Chromium";v="145"', 'sec-ch-ua-mobile': '?0', 'sec-fetch-site': 'same-origin', 'sec-fetch-mode': 'cors', 'sec-fetch-dest': 'empty', 'referer': 'http://127.0.0.1:8000/docs', 'accept-encoding': 'gzip, deflate, br, zstd', 'accept-language': 'en-US,en;q=0.9', 'cookie': 'csrftoken=vrRey3LlaOIc4fAlMr9bwV63XwuJrzfv'}
+2026-02-19 23:33:08,046 - core.middleware.logging - INFO - Response: GET http://127.0.0.1:8000/openapi.json - Status: 200
+2026-02-19 23:33:27,584 - core.middleware.logging - INFO - Request: GET http://127.0.0.1:8000/health - Headers: {'host': '127.0.0.1:8000', 'connection': 'keep-alive', 'sec-ch-ua-platform': '"Windows"', 'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36 Edg/145.0.0.0', 'accept': 'application/json', 'sec-ch-ua': '"Not:A-Brand";v="99", "Microsoft Edge";v="145", "Chromium";v="145"', 'sec-ch-ua-mobile': '?0', 'sec-fetch-site': 'same-origin', 'sec-fetch-mode': 'cors', 'sec-fetch-dest': 'empty', 'referer': 'http://127.0.0.1:8000/docs', 'accept-encoding': 'gzip, deflate, br, zstd', 'accept-language': 'en-US,en;q=0.9', 'cookie': 'csrftoken=vrRey3LlaOIc4fAlMr9bwV63XwuJrzfv'}
+2026-02-19 23:33:27,599 - core.middleware.logging - INFO - Response: GET http://127.0.0.1:8000/health - Status: 200
+2026-02-19 23:33:43,847 - core.middleware.logging - INFO - Request: POST http://127.0.0.1:8000/health - Headers: {'host': '127.0.0.1:8000', 'connection': 'keep-alive', 'content-length': '137', 'sec-ch-ua-platform': '"Windows"', 'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36 Edg/145.0.0.0', 'accept': 'application/json', 'sec-ch-ua': '"Not:A-Brand";v="99", "Microsoft Edge";v="145", "Chromium";v="145"', 'content-type': 'application/json', 'sec-ch-ua-mobile': '?0', 'origin': 'http://127.0.0.1:8000', 'sec-fetch-site': 'same-origin', 'sec-fetch-mode': 'cors', 'sec-fetch-dest': 'empty', 'referer': 'http://127.0.0.1:8000/docs', 'accept-encoding': 'gzip, deflate, br, zstd', 'accept-language': 'en-US,en;q=0.9', 'cookie': 'csrftoken=vrRey3LlaOIc4fAlMr9bwV63XwuJrzfv'}
+2026-02-19 23:33:43,897 - nexios - ERROR - Traceback (most recent call last):
+  File "C:\Users\USER-PC\Documents\NEXIOS PROJECT\nexios\nexios\_internals\_middleware.py", line 193, in call_next
+    message = await recv_stream.receive()
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER-PC\Documents\NEXIOS PROJECT\.venv\Lib\site-packages\anyio\streams\memory.py", line 126, in receive
+    raise EndOfStream from None
+anyio.EndOfStream
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\USER-PC\Documents\NEXIOS PROJECT\nexios\nexios\exception_handler.py", line 43, in wrap_http_exceptions
+    return await call_next()
+           ^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER-PC\Documents\NEXIOS PROJECT\nexios\nexios\_internals\_middleware.py", line 199, in call_next
+    raise app_exc
+  File "C:\Users\USER-PC\Documents\NEXIOS PROJECT\nexios\nexios\_internals\_middleware.py", line 187, in coro
+    await self.app(scope, receive_or_disconnect, send_no_error)
+  File "C:\Users\USER-PC\Documents\NEXIOS PROJECT\nexios\nexios\routing\router.py", line 2172, in __call__
+    await app(scope, receive, send)
+  File "C:\Users\USER-PC\Documents\NEXIOS PROJECT\nexios\nexios\routing\router.py", line 2183, in app
+    await route.handle(scope, receive, send)  # type: ignore
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER-PC\Documents\NEXIOS PROJECT\nexios\nexios\routing\grouping.py", line 86, in handle
+    await self.app(scope, receive, send)
+  File "C:\Users\USER-PC\Documents\NEXIOS PROJECT\nexios\nexios\routing\router.py", line 2172, in __call__
+    await app(scope, receive, send)
+  File "C:\Users\USER-PC\Documents\NEXIOS PROJECT\nexios\nexios\routing\router.py", line 2183, in app
+    await route.handle(scope, receive, send)  # type: ignore
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER-PC\Documents\NEXIOS PROJECT\nexios\nexios\routing\router.py", line 305, in handle
+    await app(scope, receive, send)
+  File "C:\Users\USER-PC\Documents\NEXIOS PROJECT\nexios\nexios\_internals\_response_transformer.py", line 60, in app
+    func_result = await func(
+                  ^^^^^^^^^^^
+        request, response_manager, **request.path_params
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\USER-PC\Documents\NEXIOS PROJECT\nexios\nexios\routing\router.py", line 568, in wrapped_handler
+    return await original_handler(*handler_args, **handler_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER-PC\Documents\NEXIOS PROJECT\nexios\nexios\dependencies.py", line 313, in wrapped
+    return await handler(**bound_args.arguments)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER-PC\Documents\NEXIOS PROJECT\nexios-bootstrap\src\api\health\router.py", line 49, in post_health
+    counted_numbers = await lazy_count
+                      ^^^^^^^^^^^^^^^^
+TypeError: object AsyncLazy can't be used in 'await' expression
+
+2026-02-19 23:33:44,002 - nexios.middleware.errors.server_error_handler - ERROR - Traceback (most recent call last):
+  File "C:\Users\USER-PC\Documents\NEXIOS PROJECT\nexios\nexios\_internals\_middleware.py", line 193, in call_next
+    message = await recv_stream.receive()
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER-PC\Documents\NEXIOS PROJECT\.venv\Lib\site-packages\anyio\streams\memory.py", line 126, in receive
+    raise EndOfStream from None
+anyio.EndOfStream
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\USER-PC\Documents\NEXIOS PROJECT\nexios\nexios\middleware\errors\server_error_handler.py", line 876, in __call__
+    return await next_middleware()
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER-PC\Documents\NEXIOS PROJECT\nexios\nexios\_internals\_middleware.py", line 199, in call_next
+    raise app_exc
+  File "C:\Users\USER-PC\Documents\NEXIOS PROJECT\nexios\nexios\_internals\_middleware.py", line 187, in coro
+    await self.app(scope, receive_or_disconnect, send_no_error)
+  File "C:\Users\USER-PC\Documents\NEXIOS PROJECT\nexios\nexios\_internals\_middleware.py", line 228, in __call__
+    with recv_stream, send_stream, collapse_excgroups():
+                                   ~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\USER-PC\AppData\Local\Programs\Python\Python313\Lib\contextlib.py", line 162, in __exit__
+    self.gen.throw(value)
+    ~~~~~~~~~~~~~~^^^^^^^
+  File "C:\Users\USER-PC\Documents\NEXIOS PROJECT\nexios\nexios\utils\async_helpers.py", line 86, in collapse_excgroups
+    raise exc
+  File "C:\Users\USER-PC\Documents\NEXIOS PROJECT\nexios\nexios\_internals\_middleware.py", line 230, in __call__
+    await self.dispatch_func(request, response, call_next)  # type: ignore
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER-PC\Documents\NEXIOS PROJECT\nexios\nexios\middleware\base.py", line 79, in __call__
+    await self.process_request(request, response, wrapped_call_next)
+  File "C:\Users\USER-PC\Documents\NEXIOS PROJECT\nexios-bootstrap\src\core\middleware\logging.py", line 28, in process_request
+    await cnext()
+  File "C:\Users\USER-PC\Documents\NEXIOS PROJECT\nexios\nexios\middleware\base.py", line 77, in wrapped_call_next
+    return await call_next()  # type: ignore
+           ^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER-PC\Documents\NEXIOS PROJECT\nexios\nexios\_internals\_middleware.py", line 199, in call_next
+    raise app_exc
+  File "C:\Users\USER-PC\Documents\NEXIOS PROJECT\nexios\nexios\_internals\_middleware.py", line 187, in coro
+    await self.app(scope, receive_or_disconnect, send_no_error)
+  File "C:\Users\USER-PC\Documents\NEXIOS PROJECT\nexios\nexios\_internals\_middleware.py", line 228, in __call__
+    with recv_stream, send_stream, collapse_excgroups():
+                                   ~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\USER-PC\AppData\Local\Programs\Python\Python313\Lib\contextlib.py", line 162, in __exit__
+    self.gen.throw(value)
+    ~~~~~~~~~~~~~~^^^^^^^
+  File "C:\Users\USER-PC\Documents\NEXIOS PROJECT\nexios\nexios\utils\async_helpers.py", line 86, in collapse_excgroups
+    raise exc
+  File "C:\Users\USER-PC\Documents\NEXIOS PROJECT\nexios\nexios\_internals\_middleware.py", line 230, in __call__
+    await self.dispatch_func(request, response, call_next)  # type: ignore
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER-PC\Documents\NEXIOS PROJECT\nexios\nexios\middleware\base.py", line 79, in __call__
+    await self.process_request(request, response, wrapped_call_next)
+  File "C:\Users\USER-PC\Documents\NEXIOS PROJECT\nexios\nexios\middleware\cors\_middleware.py", line 149, in process_request
+    await self.simple_response(request, response, call_next)
+  File "C:\Users\USER-PC\Documents\NEXIOS PROJECT\nexios\nexios\middleware\cors\_middleware.py", line 178, in simple_response
+    await call_next()
+  File "C:\Users\USER-PC\Documents\NEXIOS PROJECT\nexios\nexios\middleware\base.py", line 77, in wrapped_call_next
+    return await call_next()  # type: ignore
+           ^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER-PC\Documents\NEXIOS PROJECT\nexios\nexios\_internals\_middleware.py", line 199, in call_next
+    raise app_exc
+  File "C:\Users\USER-PC\Documents\NEXIOS PROJECT\nexios\nexios\_internals\_middleware.py", line 187, in coro
+    await self.app(scope, receive_or_disconnect, send_no_error)
+  File "C:\Users\USER-PC\Documents\NEXIOS PROJECT\nexios\nexios\_internals\_middleware.py", line 228, in __call__
+    with recv_stream, send_stream, collapse_excgroups():
+                                   ~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\USER-PC\AppData\Local\Programs\Python\Python313\Lib\contextlib.py", line 162, in __exit__
+    self.gen.throw(value)
+    ~~~~~~~~~~~~~~^^^^^^^
+  File "C:\Users\USER-PC\Documents\NEXIOS PROJECT\nexios\nexios\utils\async_helpers.py", line 86, in collapse_excgroups
+    raise exc
+  File "C:\Users\USER-PC\Documents\NEXIOS PROJECT\nexios\nexios\_internals\_middleware.py", line 230, in __call__
+    await self.dispatch_func(request, response, call_next)  # type: ignore
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER-PC\Documents\NEXIOS PROJECT\nexios\nexios\exception_handler.py", line 101, in __call__
+    return await wrap_http_exceptions(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<5 lines>...
+    )
+    ^
+  File "C:\Users\USER-PC\Documents\NEXIOS PROJECT\nexios\nexios\exception_handler.py", line 61, in wrap_http_exceptions
+    raise exc
+  File "C:\Users\USER-PC\Documents\NEXIOS PROJECT\nexios\nexios\exception_handler.py", line 43, in wrap_http_exceptions
+    return await call_next()
+           ^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER-PC\Documents\NEXIOS PROJECT\nexios\nexios\_internals\_middleware.py", line 199, in call_next
+    raise app_exc
+  File "C:\Users\USER-PC\Documents\NEXIOS PROJECT\nexios\nexios\_internals\_middleware.py", line 187, in coro
+    await self.app(scope, receive_or_disconnect, send_no_error)
+  File "C:\Users\USER-PC\Documents\NEXIOS PROJECT\nexios\nexios\routing\router.py", line 2172, in __call__
+    await app(scope, receive, send)
+  File "C:\Users\USER-PC\Documents\NEXIOS PROJECT\nexios\nexios\routing\router.py", line 2183, in app
+    await route.handle(scope, receive, send)  # type: ignore
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER-PC\Documents\NEXIOS PROJECT\nexios\nexios\routing\grouping.py", line 86, in handle
+    await self.app(scope, receive, send)
+  File "C:\Users\USER-PC\Documents\NEXIOS PROJECT\nexios\nexios\routing\router.py", line 2172, in __call__
+    await app(scope, receive, send)
+  File "C:\Users\USER-PC\Documents\NEXIOS PROJECT\nexios\nexios\routing\router.py", line 2183, in app
+    await route.handle(scope, receive, send)  # type: ignore
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER-PC\Documents\NEXIOS PROJECT\nexios\nexios\routing\router.py", line 305, in handle
+    await app(scope, receive, send)
+  File "C:\Users\USER-PC\Documents\NEXIOS PROJECT\nexios\nexios\_internals\_response_transformer.py", line 60, in app
+    func_result = await func(
+                  ^^^^^^^^^^^
+        request, response_manager, **request.path_params
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\USER-PC\Documents\NEXIOS PROJECT\nexios\nexios\routing\router.py", line 568, in wrapped_handler
+    return await original_handler(*handler_args, **handler_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER-PC\Documents\NEXIOS PROJECT\nexios\nexios\dependencies.py", line 313, in wrapped
+    return await handler(**bound_args.arguments)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER-PC\Documents\NEXIOS PROJECT\nexios-bootstrap\src\api\health\router.py", line 49, in post_health
+    counted_numbers = await lazy_count
+                      ^^^^^^^^^^^^^^^^
+TypeError: object AsyncLazy can't be used in 'await' expression
+
+2026-02-19 23:34:19,817 - core.database - INFO - Closing database connections...
+2026-02-19 23:34:19,818 - tortoise - INFO - Tortoise-ORM shutdown
+2026-02-19 23:34:19,819 - core.database - INFO - Database connections closed successfully
+2026-02-19 23:34:23,299 - core.database - INFO - Initializing database connection...
+2026-02-19 23:34:23,339 - core.database - INFO - DATABASE_URL not provided or not PostgreSQL, using SQLite
+2026-02-19 23:34:23,377 - core.database - INFO - Using SQLite database
+2026-02-19 23:34:23,558 - core.database - INFO - Database initialized successfully
+2026-02-19 23:35:14,516 - core.database - INFO - Closing database connections...
+2026-02-19 23:35:14,517 - tortoise - INFO - Tortoise-ORM shutdown
+2026-02-19 23:35:14,517 - core.database - INFO - Database connections closed successfully
+2026-02-19 23:35:16,384 - core.database - INFO - Initializing database connection...
+2026-02-19 23:35:16,384 - core.database - INFO - DATABASE_URL not provided or not PostgreSQL, using SQLite
+2026-02-19 23:35:16,384 - core.database - INFO - Using SQLite database
+2026-02-19 23:35:16,414 - core.database - INFO - Database initialized successfully
+2026-02-19 23:35:22,664 - core.middleware.logging - INFO - Request: POST http://127.0.0.1:8000/health - Headers: {'host': '127.0.0.1:8000', 'connection': 'keep-alive', 'content-length': '137', 'sec-ch-ua-platform': '"Windows"', 'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36 Edg/145.0.0.0', 'accept': 'application/json', 'sec-ch-ua': '"Not:A-Brand";v="99", "Microsoft Edge";v="145", "Chromium";v="145"', 'content-type': 'application/json', 'sec-ch-ua-mobile': '?0', 'origin': 'http://127.0.0.1:8000', 'sec-fetch-site': 'same-origin', 'sec-fetch-mode': 'cors', 'sec-fetch-dest': 'empty', 'referer': 'http://127.0.0.1:8000/docs', 'accept-encoding': 'gzip, deflate, br, zstd', 'accept-language': 'en-US,en;q=0.9', 'cookie': 'csrftoken=vrRey3LlaOIc4fAlMr9bwV63XwuJrzfv'}
+2026-02-19 23:35:22,835 - core.middleware.logging - INFO - Response: POST http://127.0.0.1:8000/health - Status: 200
+2026-02-19 23:36:14,325 - core.database - INFO - Closing database connections...
+2026-02-19 23:36:14,335 - tortoise - INFO - Tortoise-ORM shutdown
+2026-02-19 23:36:14,343 - core.database - INFO - Database connections closed successfully
+2026-02-19 23:36:21,775 - core.database - INFO - Initializing database connection...
+2026-02-19 23:36:21,776 - core.database - INFO - DATABASE_URL not provided or not PostgreSQL, using SQLite
+2026-02-19 23:36:21,776 - core.database - INFO - Using SQLite database
+2026-02-19 23:36:21,810 - core.database - INFO - Database initialized successfully
+2026-02-19 23:37:16,870 - core.middleware.logging - INFO - Request: POST http://127.0.0.1:8000/health - Origin: http://127.0.0.1:8000
+2026-02-19 23:37:17,038 - core.middleware.logging - INFO - Response: POST http://127.0.0.1:8000/health - Status: 200
+2026-02-19 23:40:04,659 - core.database - INFO - Closing database connections...
+2026-02-19 23:40:04,660 - tortoise - INFO - Tortoise-ORM shutdown
+2026-02-19 23:40:04,660 - core.database - INFO - Database connections closed successfully

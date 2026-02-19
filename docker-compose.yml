@@ -1,0 +1,52 @@
+version: '3.8'
+
+services:
+  app:
+    build: .
+    ports:
+      - "8000:8000"
+    environment:
+      - DATABASE_URL=postgres://postgres:password@postgres:5432/nexios
+      - DB_HOST=postgres
+      - DB_PORT=5432
+      - DB_USER=postgres
+      - DB_PASSWORD=password
+      - DB_NAME=nexios
+    depends_on:
+      - postgres
+    volumes:
+      - ./src:/app/src
+      - ./logs:/app/logs
+    networks:
+      - nexios-network
+
+  postgres:
+    image: postgres:15
+    environment:
+      - POSTGRES_DB=nexios
+      - POSTGRES_USER=postgres
+      - POSTGRES_PASSWORD=password
+    ports:
+      - "5432:5432"
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+    networks:
+      - nexios-network
+
+  # Redis service (commented out as requested)
+  # redis:
+  #   image: redis:7-alpine
+  #   ports:
+  #     - "6379:6379"
+  #   volumes:
+  #     - redis_data:/data
+  #   networks:
+  #     - nexios-network
+
+volumes:
+  postgres_data:
+  # redis_data:
+
+networks:
+  nexios-network:
+    driver: bridge
