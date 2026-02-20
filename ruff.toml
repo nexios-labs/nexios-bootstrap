@@ -1,0 +1,85 @@
+# Ruff configuration for Nexios Bootstrap
+
+# Assume Python 3.11
+target-version = "py311"
+
+# Set line length
+line-length = 88
+
+# Select rules
+select = [
+    # pycodestyle
+    "E",
+    # Pyflakes
+    "F",
+    # pyupgrade
+    "UP",
+    # flake8-bugbear
+    "B",
+    # flake8-simplify
+    "SIM",
+    # isort
+    "I",
+    # pep8-naming
+    "N",
+    # flake8-unused-arguments
+    "ARG",
+    # flake8-comprehensions
+    "C4",
+    # flake8-quotes
+    "Q",
+    # flake8-import-conventions
+    "ICN",
+    # flake8-pytest-style
+    "PT",
+    # flake8-async
+    "ASYNC",
+    # flake8-return
+    "RET",
+    # flake8-raise
+    "RSE",
+    # flake8-errmsg
+    "EM",
+]
+
+# Ignore specific rules
+ignore = [
+    # Line too long (handled by formatter)
+    "E501",
+    # Too many arguments to function call
+    "ARG001",
+    # Missing type annotation for self
+    "ANN101",
+    # Missing type annotation for cls in classmethod
+    "ANN102",
+]
+
+# Exclude patterns
+exclude = [
+    ".git",
+    "__pycache__",
+    "migrations",
+    ".venv",
+    "venv",
+    "build",
+    "dist",
+    ".pytest_cache",
+    ".coverage",
+    "htmlcov",
+]
+
+# Per-file ignores
+[per-file-ignores]
+"__init__.py" = ["F401"]  # Unused imports in __init__.py
+"test_*.py" = ["S101"]     # Allow assert statements in tests
+"conftest.py" = ["F401"]   # Unused imports in conftest.py
+
+# Flake8 quotes
+[format]
+quote-style = "double"
+indent-style = "space"
+
+# Import sorting
+[isort]
+known-first-party = ["src"]
+known-third-party = ["nexios", "tortoise", "pytest", "aerich"]

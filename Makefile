@@ -1,19 +1,26 @@
-.PHONY: help install dev docker-build docker-up docker-down migrate upgrade clean test lint format
+.PHONY: help install dev docker-build docker-up docker-down migrate upgrade clean test test-verbose test-coverage test-unit test-integration test-performance lint format format-check security
 
 # Default target
 help:
 	@echo "Available commands:"
-	@echo "  install     - Install dependencies"
-	@echo "  dev         - Run development server"
-	@echo "  docker-build - Build Docker image"
-	@echo "  docker-up   - Start services with Docker Compose"
-	@echo "  docker-down - Stop Docker Compose services"
-	@echo "  migrate     - Create initial migration"
-	@echo "  upgrade     - Apply migrations"
-	@echo "  clean       - Clean up generated files"
-	@echo "  test        - Run tests"
-	@echo "  lint        - Run linting"
-	@echo "  format      - Format code"
+	@echo "  install         - Install dependencies"
+	@echo "  dev             - Run development server"
+	@echo "  docker-build     - Build Docker image"
+	@echo "  docker-up       - Start services with Docker Compose"
+	@echo "  docker-down     - Stop Docker Compose services"
+	@echo "  migrate         - Create initial migration"
+	@echo "  upgrade         - Apply migrations"
+	@echo "  clean           - Clean up generated files"
+	@echo "  test            - Run tests"
+	@echo "  test-verbose    - Run tests with verbose output"
+	@echo "  test-coverage   - Run tests with coverage report"
+	@echo "  test-unit       - Run unit tests only"
+	@echo "  test-integration - Run integration tests only"
+	@echo "  test-performance - Run performance tests"
+	@echo "  lint            - Run linting"
+	@echo "  format          - Format code"
+	@echo "  format-check     - Check code formatting"
+	@echo "  security        - Run security scans"
 
 # Install dependencies
 install:
@@ -78,14 +85,37 @@ reset-db:
 
 # Development tools
 test:
-	pytest -v
+	pytest
+
+test-verbose:
+	pytest -v -s
+
+test-coverage:
+	pytest --cov=src --cov-report=html --cov-report=term-missing
+
+test-unit:
+	pytest tests/ -m "unit"
+
+test-integration:
+	pytest tests/ -m "integration"
+
+test-performance:
+	pytest tests/ -m "performance"
 
 lint:
-	ruff check src/
+	ruff check src/ tests/ --output-format=github
 
 format:
-	ruff format src/
-	black src/
+	ruff format src/ tests/
+	black src/ tests/
+
+format-check:
+	ruff format --check src/ tests/
+	black --check src/ tests/
+
+security:
+	bandit -r src/
+	safety check
 
 clean:
 	find . -type f -name "*.pyc" -delete
