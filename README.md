@@ -5,6 +5,7 @@
 # 🚀 Nexios Bootstrap
 
 A modern, high-performance ASGI web framework starter template built with **Nexios** - the next-generation Python web framework designed for speed, flexibility, and simplicity with Rust-powered performance.
+</div>
 
 ## ✨ Nexios Features
 
@@ -255,7 +256,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## 📞 Support
 
-- 📖 [Documentation](https://nexios-labs.github.io/nexios/)
+- 📖 [Documentation](https://nexioslabs.com)
 - 🐛 [Issues](https://github.com/nexios-labs/nexios/issues)
 - 💬 [Discussions](https://github.com/nexios-labs/nexios/discussions)
 
@@ -267,4 +268,3 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 Built with ❤️ using [Nexios](https://github.com/nexios-labs/nexios)
 
-</div>
