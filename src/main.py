@@ -1,8 +1,8 @@
 from nexios import NexiosApp
 from nexios.middleware.cors import CORSMiddleware,CorsConfig
-from core.middleware.logging import LoggingMiddleware
-from core.database import init_db, close_db
-from api.health.router import router as health_router
+from src.core.middleware.logging import LoggingMiddleware
+from src.core.database import init_db, close_db
+from src.api.health.router import router as health_router
 
 app = NexiosApp(
     title="Nexios Starter",

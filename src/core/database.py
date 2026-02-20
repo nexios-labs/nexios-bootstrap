@@ -10,11 +10,10 @@ def get_database_config():
     db_url = os.getenv("DATABASE_URL")
     
     if db_url and db_url.startswith("postgres://"):
-        # PostgreSQL configuration
         return {
             "connections": {
                 "default": {
-                    "engine": "tortoise.backends.postgres",
+                    "engine": "tortoise.backends.asyncpg",
                     "credentials": {
                         "host": os.getenv("DB_HOST", "localhost"),
                         "port": int(os.getenv("DB_PORT", "5432")),
@@ -55,6 +54,7 @@ async def init_db():
     try:
         logger.info("Initializing database connection...")
         config = get_database_config()
+
         
         if "postgres" in config["connections"]["default"]["engine"]:
             logger.info("Using PostgreSQL database")

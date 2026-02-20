@@ -1,10 +1,8 @@
-version: '3.8'
-
 services:
   app:
     build: .
     ports:
-      - "8000:8000"
+      - "52789:52789"
     environment:
       - DATABASE_URL=postgres://postgres:password@postgres:5432/nexios
       - DB_HOST=postgres
@@ -27,11 +25,16 @@ services:
       - POSTGRES_USER=postgres
       - POSTGRES_PASSWORD=password
     ports:
-      - "5432:5432"
+      - "5433:5432"
     volumes:
       - postgres_data:/var/lib/postgresql/data
     networks:
       - nexios-network
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U postgres"]
+      interval: 2s
+      timeout: 2s
+      retries: 10
 
   # Redis service (commented out as requested)
   # redis:

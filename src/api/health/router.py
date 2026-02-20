@@ -1,8 +1,8 @@
 from datetime import datetime, timezone
 from nexios.routing import Router
 from nexios.http import Request, Response
+from src.utils.counting import count_numbers_lazy
 from .schemas import HealthResponse, HealthCheckRequest
-from utils.counting import count_numbers_lazy
 
 router = Router(prefix="/health", tags=["Health-Check"])
 

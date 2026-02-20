@@ -1,0 +1,47 @@
+# ignore local databases
+.venv
+.env
+.env.local
+.env.dev
+.env.test
+.env.prod
+.env.docker
+
+# ignore local databases
+*.db
+*.sqlite
+*.sqlite3
+*.sqlite-shm
+*.sqlite-wal
+*.pg_stat_statements
+*.my.cnf
+*.pem
+*.key
+*.p12
+*.crt
+*.csr
+*.log
+*.pid
+*.sock
+*.swp
+*~
+.DS_Store
+.directory
+.local
+.cache
+.pytest_cache
+__pycache__
+*.pyc
+*.pyo
+*.pyd
+*.pytest_cache
+*.coverage
+*.sqlite
+*.sqlite-shm
+*.sqlite-wal
+*.pth
+*.pyi
+
+# ignore local caches
+.cache
+.pytest_cache
