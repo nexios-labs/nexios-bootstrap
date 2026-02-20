@@ -20,7 +20,7 @@ def client():
 async def async_client():
     """Async test client fixture"""
     from nexios.testclient import AsyncTestClient
-    
+
     async with AsyncTestClient(app) as client:
         yield client
 
@@ -29,16 +29,18 @@ async def async_client():
 def mock_env():
     """Mock environment variables for testing"""
     original_env = os.environ.copy()
-    
+
     # Set test environment
-    os.environ.update({
-        "APP_ENV": "testing",
-        "DEBUG": "true",
-        "LOG_LEVEL": "ERROR"  # Reduce log noise in tests
-    })
-    
+    os.environ.update(
+        {
+            "APP_ENV": "testing",
+            "DEBUG": "true",
+            "LOG_LEVEL": "ERROR",  # Reduce log noise in tests
+        }
+    )
+
     yield
-    
+
     # Restore original environment
     os.environ.clear()
     os.environ.update(original_env)

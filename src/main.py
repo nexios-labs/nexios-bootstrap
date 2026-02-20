@@ -1,5 +1,5 @@
 from nexios import NexiosApp
-from nexios.middleware.cors import CORSMiddleware,CorsConfig
+from nexios.middleware.cors import CORSMiddleware, CorsConfig
 from src.core.middleware.logging import LoggingMiddleware
 from src.core.database import init_db, close_db
 from src.api.health.router import router as health_router
@@ -11,13 +11,7 @@ app = NexiosApp(
 )
 
 # Setup CORS
-app.add_middleware(
-    CORSMiddleware(
-        config=CorsConfig(
-            allow_origins=["*"]
-        )
-    )
-)
+app.add_middleware(CORSMiddleware(config=CorsConfig(allow_origins=["*"])))
 
 # Setup Logging Middleware
 app.add_middleware(LoggingMiddleware())

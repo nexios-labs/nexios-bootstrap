@@ -2,7 +2,8 @@ from nexios.auth.users.simple import SimpleUser
 from .base import BaseModel
 from tortoise import fields
 
-class Account(BaseModel,SimpleUser):
+
+class Account(BaseModel, SimpleUser):
     """
     This class extends the BaseModel and SimpleUser classes to create an account model.
     It adds the user fields to the BaseModel and SimpleUser classes.
@@ -12,7 +13,6 @@ class Account(BaseModel,SimpleUser):
         password (fields.CharField): The password of the user.
         role (fields.CharField): The role of the user.
     """
-
 
     @property
     def identity(self) -> str:
@@ -33,5 +33,3 @@ class Account(BaseModel,SimpleUser):
         Returns:
             bool: True if the user has the permission, False otherwise.
         """
-        
-        
