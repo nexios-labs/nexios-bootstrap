@@ -30,7 +30,7 @@
 .local
 .cache
 .pytest_cache
-__pycache__
+**/__pycache__/**
 *.pyc
 *.pyo
 *.pyd
@@ -41,6 +41,7 @@ __pycache__
 *.sqlite-wal
 *.pth
 *.pyi
+
 
 # ignore local caches
 .cache

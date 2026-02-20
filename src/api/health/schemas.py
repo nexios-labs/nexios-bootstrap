@@ -8,6 +8,10 @@ class HealthResponse(BaseModel):
     service: str
     timestamp: datetime
     version: str
+    check_type: Optional[str] = None
+    counting_result: Optional[dict] = None
+    details: Optional[dict] = None
+    
 
 
 class HealthCheckRequest(BaseModel):
